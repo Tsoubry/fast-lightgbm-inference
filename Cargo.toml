@@ -1,0 +1,29 @@
+[package]
+categories = ["ML", "python", "inference"]
+name = "fast-lgbm-inference"
+license = "MIT/Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+feature-pipe = { path = "./feature-pipe", version = "0.1.0" }
+actix-web = "4.2.1"
+log = "0.4.17"
+env_logger = "0.9.1"
+lightgbm = "0.2.3"
+lightgbm-sys = "0.3.0"
+libc = "0.2.133"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures = "0.3"
+
+
+[workspace]
+members = [
+    "feature-pipe",
+    "rust-transformer",
+]
+

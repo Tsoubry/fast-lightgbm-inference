@@ -1,0 +1,10 @@
+/target/
+/pkg/
+
+Cargo.lock
+
+*.env
+.python-version
+
+pipeline_config.json
+lgbm_model.txt

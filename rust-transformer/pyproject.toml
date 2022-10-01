@@ -1,0 +1,21 @@
+[project]
+name = "odt"
+version = "0.3.4"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "pandas >= 1.0",
+    "scikit-learn >=1.0",
+    "pydantic >= 1.10",
+    "httpx >= 0.23",
+]
+
+[build-system]
+build-backend = "maturin"
+requires = ["maturin>=0.13,<0.14"]
+
+
+[tool.maturin]
+python-source = "python"
+profile = "release"
